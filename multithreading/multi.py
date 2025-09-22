@@ -1,5 +1,4 @@
 from concurrent.futures import ThreadPoolExecutor
-from multiprocessing import process
 import subprocess
 import os 
 
@@ -26,7 +25,7 @@ def grep(path, needle):
 
 
 
-grep("/home/s-linux/repos/dojo/strings", "a")
+grep("/home/s-linux/repos/dojo/multithreading/strings", "a")
 
 for index, future in enumerate(futures):
     print(index, future.result())
